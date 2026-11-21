@@ -3,20 +3,22 @@
 
 /*
   STEPS
-  1 -
-  2 -
-  3 -
+  1 -chiedo all'utente che giorno è
+  2 -se sono giorni feriali il programma risponde con l'aletr Buon lavoro
+  3 -se sono Sabato o Domenica il programma risponde con l'alert Buon Weekend 
   4 -
 */
 
-// # Fase di preparazione
-
-
 // # Fase di raccolta dati
+let giornoAttuale = prompt("Che giorno è oggi?")
 
+// # Fase di elaborazione e di output
+if (giornoAttuale == "sabato" || giornoAttuale == "domenica") {
+  alert("Buon Weekend!")
+}
+else {
+  alert("Buon Lavoro!")
+}
 
-// # Fase di elaborazione
-
-
-// # Fase di output
+// essendo js case sensitive Sabato finisce nell'else in quanto divesro da sabato con la s minuscola 
 
